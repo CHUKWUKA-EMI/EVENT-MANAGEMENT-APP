@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MY EVENT MANAGER</title>
+	<link href="CSS/styles.css" rel="Stylesheet">
+</head>
+
+<body class="grid-container">
+	<p class="p-grid"><a href="./index.html">Home</a> <a href="./EventPage.html">E-Samples</a> <a
+			href="https://emichukwuka.netlify.com">Profile</a>
+	</p>
+	<h1 class="h1-grid">MY EVENTS MANAGER</h1>
+
+	<p class="p2-grid">Create an event by filling the form below:</p>
+
+	<form id="myForm" class="form-grid">
+		<h4>TYPE OF EVENT:</h4>
+		<P>
+			<select name="events" id="events" class="obt">
+				<option>Birthday Party</option>
+				<option>Wedding Party</option>
+				<option>Naming Ceremony</option>
+				<option>Convocation Ceremony</option>
+				<option>Conference</option>
+				<option>Others</option>
+			</select>
+		</p>
+		<h4>NAME OF EVENT:</h4>
+		<label><input type="text" id="eventName" placeholder="name of event..." class="obt" required></label>
+
+		<h4>VENUE:</h4>
+		<label><input type="text" placeholder="venue..." id="venue" class="obt" required name="text"></label>
+		<h4>DATE:</h4>
+		<label><input type="date" value="yyyy-MM-dd" id="date" class="obt" required name="date"></label>
+		<h4>GUESTS OF HONOUR:</h4>
+		<label><textarea id="guests"  class="obt" required name="text"></textarea></label>
+		<h4>COMMENT:</h4>
+		<label>
+			<textarea id="comment" class="obt" required name="text"></textarea>
+		</label>
+		<h4>IMAGE UPLOAD</h4>
+		<label for="photo" style="cursor: pointer;"><input type="file" id="photo"  value="photo" accept="image/*" class="slt"><a></a>
+		</label>
+		
+		<P><label><input type="submit" id="submit" class="smt" onsubmit="addingEvents()"> </label>  
+		</P>
+
+	</form>
+	<!-- <p style="grid-area: 7/4/7/4;"><button value="delete" id="delete" class="slt" onclick="deleteEvents()">Delete</button></p> -->
+    <div id="eventClass" class="div-grid">
+		
+		
+	</div>
+    
+	<script src="./events.js"></script>
+</body>
+
+</html>

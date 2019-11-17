@@ -1,0 +1,200 @@
+/* for the home page */
+a{
+   text-decoration-line: none;
+}
+
+a:hover{
+    color: red;
+    background-color: black;
+}
+.h1-grid {
+    grid-area: 2 /1 / 2 / span 4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: brown;
+    text-align: center;
+    color: black;
+    box-sizing: border-box;
+    margin: 20px;
+    
+}
+.p-grid{
+    grid-area: 1 / 1 / 1 / span 4;
+    text-align: center;
+    word-spacing: 80px;
+    background-color:whitesmoke;
+    color:black;
+    font-size: 25px;
+    font-family: 'Times New Roman';
+    margin: 20px;
+    
+    
+}
+.grid-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    padding:20px;
+    background-color:#0a191c;
+
+/* for the first event */
+}
+.grid-item1{
+    
+    grid-area: 1 / 1 / 1 / 1 ;
+    color:gold;
+}
+.grid-item2{
+    
+    grid-area: 2 / 1 / 2 / 1 ;
+    color: green;
+}
+.grid-item3{
+    grid-area: 3 / 1 / 3 / 1;
+    width: 200px;
+    height: 250px;
+    border: 5px solid brown;
+    border-radius: 2rem;
+}
+
+.grid-item4{
+    grid-area: 4/ 1 / 4 / 1;
+    color: green;
+}
+
+.grid-item5{
+    grid-area: 5 / 1 / 6/ 1;
+    color: green;
+}
+.grid-item6{
+    grid-area: 7 /1 / 7 / 1;
+    font-size: 15px;
+    color: gold;
+    font-style: italic;
+}
+/* for the second event */
+.grid-birth1{
+     grid-area: 1/2/1/2;
+     color: gold;
+}
+.grid-birth2{
+    grid-area: 2/2/2/2;
+    color: green;
+}
+.grid-birth3{
+    grid-area: 3/2/3/2;
+    width: 200px;
+    height: 250px;
+    border: 5px solid brown;
+    border-radius: 2rem;
+}
+.grid-birth4{
+    grid-area: 4/2/4/2;
+    color: green;
+}
+.grid-birth5{
+    grid-area: 5/2/6/2;
+    color: green;
+}
+.grid-birth6{
+    grid-area: 7/2/7/2;
+    font-size: 15px;
+    color: gold;
+    font-style: italic;
+
+}
+/* For  the third event */
+.grid-convoc1{
+    grid-area: 1/3/1/3;
+    color: gold;
+}
+.grid-convoc2{
+   grid-area: 2/3/2/3;
+   color: green;
+}
+.grid-convoc3{
+   grid-area: 3/3/3/3;
+   width: 200px;
+   height: 250px;
+   border: 5px solid brown;
+   border-radius: 2rem;
+}
+.grid-convoc4{
+   grid-area: 4/3/4/3;
+   color: green;
+}
+.grid-convoc5{
+   grid-area: 5/3/6/3;
+   color: green;
+}
+.grid-convoc6{
+   grid-area: 7/3/7/3;
+   font-size: 15px;
+   color: gold;
+   font-style: italic;
+
+}
+
+/* for the home page */
+.p2-grid{
+    grid-area: 3 / 2 / 3 / 4; 
+    font-size: 25px;
+    color: gold;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.form-grid{
+    grid-area: 4 / 2 / 6 / 4;
+    text-align: center;
+}
+.div-grid{
+    display: flex;
+    flex-flow: row;
+    grid-area: 6/2/7/4;
+    text-align: left;
+    background-color: #3d7e9a;
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+
+h4{
+    color:#60ed39;
+}
+.obt{
+    border-radius: 5px;
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+    background-color: white
+    ;
+    
+}
+.obt:required{
+    color:black;
+    ;
+}
+.smt{
+    
+    border-radius: 5px;
+    padding: 15px;
+    background: brown;
+    color: #0a191c;
+    font-size: 15px;
+    font-weight: bold;
+}
+.slt{
+    border-radius: 5px;
+    padding: 8px;
+    background: darkgreen;
+    color:black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer 
+    
+}
+
+
