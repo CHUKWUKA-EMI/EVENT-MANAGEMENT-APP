@@ -146,10 +146,13 @@ function handleFile(file){
 	reader.onloadend = function(event){
 		const imageStore = new Image()
 		imageStore.onload = function(ev){
-			canvas.height =ev.target.height;
-			canvas.width = ev.target.width;
+			canvas.height = 350;
+			canvas.width = 350;
+			
+			const height = 300;
+			const width = 300;
 
-			ctx.drawImage(ev.target, 0,0);
+			ctx.drawImage(ev.target, 0,0,width, height);
 			ul.appendChild(canvas); 
 		}
 		imageStore.src = event.target.result;
